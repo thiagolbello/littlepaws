@@ -3,11 +3,11 @@ export const animals = [
         id: '1',
         categoria: 'perros',
         name: 'Oliver',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Masculino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '3',
+        height: '15',
+        weight: '5',
         image: ''
     },
 
@@ -15,11 +15,11 @@ export const animals = [
         id: '2',
         categoria: 'gatos',
         name: 'Aquiles',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Masculino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '6',
+        height: '23',
+        weight: '3.6',
         image: ''
     },
     
@@ -27,11 +27,11 @@ export const animals = [
         id: '3',
         categoria: 'perros',
         name: 'Bonnie',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Femenino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '1',
+        height: '48',
+        weight: '12',
         image: ''
     },
 
@@ -39,11 +39,11 @@ export const animals = [
         id: '4',
         categoria: 'gatos',
         name: 'Diana',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Femenino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '2',
+        height: '24',
+        weight: '4',
         image: ''
     },
 
@@ -51,11 +51,11 @@ export const animals = [
         id: '5',
         categoria: 'perros',
         name: 'Coco',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Masculino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '8',
+        height: '80',
+        weight: '17',
         image: ''
     },
 
@@ -63,11 +63,11 @@ export const animals = [
         id: '6',
         categoria: 'gatos',
         name: 'Mew',
-        description: '',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         gender: 'Femenino',
-        age: '',
-        height: '',
-        weight: '',
+        age: '4',
+        height: '25',
+        weight: '4.5',
         image: ''
     }
 ];

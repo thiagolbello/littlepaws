@@ -22,12 +22,12 @@ const Item = ({ details }) => {
           {details.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {details.description}
+          {details.weight}
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small" style={{ backgroundColor: cSecondary, color: 'black', marginRight: '1em' }}>Adoptar</Button>
-        <Link to={`/detalles/${details.id}`} style={{ textDecoration: 'none' }}><Button size="small" to="">Más detalles</Button></Link>
+        <Link to={`/detalles/${details.id}`} style={{ textDecoration: 'none' }}><Button size="small">Más detalles</Button></Link>
       </CardActions>
     </Card>
   );
