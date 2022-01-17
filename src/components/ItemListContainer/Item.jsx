@@ -22,7 +22,7 @@ const Item = ({ details }) => {
           {details.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {details.weight}
+          {details.description}
         </Typography>
       </CardContent>
       <CardActions>
