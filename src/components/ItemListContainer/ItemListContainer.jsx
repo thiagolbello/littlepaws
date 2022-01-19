@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { getAnimals } from '../animals'
+import { getZapatillas } from '../zapatillas'
 import ItemList from './ItemList'
 
 const ItemListContainer = () => {
@@ -10,11 +10,11 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         if(categoriaId) {
-            getAnimals
+            getZapatillas
                 .then(res => setData(res.filter(prod => prod.categoria === categoriaId)))
                 .catch((error) => {console.error(error)})
         } else {
-            getAnimals
+            getZapatillas
                 .then((res) => {setData(res);})
                 .catch((error) => {console.error(error);})
         }
@@ -22,7 +22,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <ItemList animalsDetails={data}/>
+            <ItemList zapatillasDetails={data}/>
         </div>
     )
 }

@@ -2,12 +2,12 @@ import { Box } from '@mui/material';
 import React from 'react'
 import Item from './Item';
 
-const ItemList = ({ animalsDetails }) => {
+const ItemList = ({ zapatillasDetails }) => {
 
     return (
         <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', margin: '2em' }}>
-            {animalsDetails.map((animalsDetails) => (
-                <Item key={animalsDetails.id} details={animalsDetails}/>
+            {zapatillasDetails.map((zapatillasDetails) => (
+                <Item key={zapatillasDetails.id} details={zapatillasDetails}/>
             ))}
         </Box>
 
