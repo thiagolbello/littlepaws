@@ -1,7 +1,16 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount"
 
 const ItemDetail = ({details}) => {
 
+    const [show, setShow] = useState (true)
+
+    const onAdd = (contador) => {
+        setShow(false)
+        alert(`${contador}`)
+    }
+    
     return (
         <div>
             <img src={`../${details.image}`} width={400}></img>
@@ -9,7 +18,13 @@ const ItemDetail = ({details}) => {
             <h3><strong>Descripcion: </strong>{details.description}</h3>
             <h2><strong>Precio: </strong>{details.price}</h2>
             <h4><strong>Stock: </strong>{details.stock}</h4>
-            <ItemCount stock={details.stock}/>
+
+            {show ? <ItemCount stock={details.stock} onAdd={onAdd}/> : 
+            <div>
+                <Link to='/cart'><button>Terminar la Compra</button></Link>
+                <Link to='/'><button>Continuar Comprando</button></Link>
+            </div>
+            }
         </div>
     )
 }
