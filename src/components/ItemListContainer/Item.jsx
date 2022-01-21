@@ -26,7 +26,7 @@ const Item = ({ details }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" style={{ backgroundColor: cSecondary, color: 'black', marginRight: '1em' }}>Adoptar</Button>
+        <Button size="small" style={{ backgroundColor: cSecondary, color: 'black', marginRight: '1em' }}>Comprar</Button>
         <Link to={`/detalles/${details.id}`} style={{ textDecoration: 'none' }}><Button size="small">Más detalles</Button></Link>
       </CardActions>
     </Card>

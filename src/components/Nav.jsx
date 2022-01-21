@@ -19,7 +19,7 @@ export default function Nav() {
           <Link to="/categoria/nike" style={{ color: 'white', textDecoration: 'none' }}><Typography textAlign="center" margin={2}>Nike</Typography></Link>
           <Link to="/categoria/adidas" style={{ color: 'white', textDecoration: 'none' }}><Typography textAlign="center" margin={2}>Adidas</Typography></Link>
 
-          <Button color="inherit"><ShoppingCartSharpIcon/></Button>
+          <Link to='/cart' style={{ color: 'white', textDecoration: 'none' }}><Button color="inherit"><ShoppingCartSharpIcon/></Button></Link>
         </Toolbar>
       </AppBar>
     </Box>
