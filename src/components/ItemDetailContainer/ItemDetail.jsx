@@ -12,7 +12,6 @@ const ItemDetail = ({details}) => {
 
     const onAdd = (contador) => {
         setShow(false)
-        alert(`${contador}`)
         agregarAlCarrito({...details, cantidad: contador})
     }
     

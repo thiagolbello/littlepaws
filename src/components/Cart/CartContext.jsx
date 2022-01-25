@@ -26,11 +26,31 @@ export const CartContextProvider = ({children}) => {
         setCartList([])
     }
 
+    function eliminarItem(id) {
+        const filtrarItem = cartList.filter(items => items.id !== id)
+        setCartList(filtrarItem)
+    }
+
+    function sumarPrecios() {
+        const totalPrecio = cartList.reduce((previo, actual) => previo + actual.price * actual.cantidad, 0)
+
+        return totalPrecio
+    }
+
+    function sumarItems() {
+        const totalItems = cartList.reduce((previo, actual) => previo + actual.cantidad, 0)
+
+        return totalItems
+    }
+
     return (
         <CartContext.Provider value={{
             cartList,
             agregarAlCarrito,
-            vaciarCarrito
+            vaciarCarrito,
+            eliminarItem,
+            sumarPrecios,
+            sumarItems
         }}>
             {children}
         </CartContext.Provider>
