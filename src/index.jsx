@@ -4,6 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDZOXhpJHtvWBxWqxiL8jsnmYGUmqD9sFU",
+  authDomain: "coderhouse-ecommerce-c7551.firebaseapp.com",
+  projectId: "coderhouse-ecommerce-c7551",
+  storageBucket: "coderhouse-ecommerce-c7551.appspot.com",
+  messagingSenderId: "610430487326",
+  appId: "1:610430487326:web:5b83cfa1501f8186f7170f"
+};
+
+initializeApp(firebaseConfig);
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
